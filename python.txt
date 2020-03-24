@@ -1,0 +1,1074 @@
+1. Python is a grneral purpose high level programming language.
+2. It was developed by Guido Van Rossum in 1989.
+3. It was officially released in 20th February 1991.
+4. Python is
+		- Simple Language
+		- Eaasy to Understand
+		- Very less code to write in it
+		- Concise code
+		- AI, ML, DL, NN, DS, IOT
+		
+5. Hello World Program in C Language
+
+	#include<stdio.h>
+	main(){
+		printf("Hello World");
+	}
+	
+	then compile and execute
+
+6. Hello World Program in Java Language
+
+	public class Test{
+		public static void main(String[] args){
+			System.out.println("Hello World");
+		}
+	}
+	
+	then compile javac Test.java
+	then execute java Test
+	
+7. Hello World Program in Python
+
+	print("Hello World")
+	
+	To execute => python test.py or py test.py
+	
+8. Python is dynamically typed programming language. We are not required to provide type to variable while declaring
+
+9. The Complete Monty Python's Flying Circus
+
+10. C -> Functional Programming Language
+	C++, Java -> Object Oriented Programming Language
+	Perl, ShellScript -> Scripting Language
+	Python -> Functional Programming features from C
+		   -> Object Oriented Programming features from C++
+		   -> Scripting Language features from Perl, ShellScript
+		   -> Modular Programming features from Modula-3
+		   
+11. Declaring and Calling a Functional
+	>>> def a():
+			print("my first method ");
+
+	>>> a()
+	
+12. Where we can use python?
+	-> Desktop Applications
+	-> Web Applications
+	-> Network Applications
+	-> Games Development
+	-> Data Analysis
+	-> ML,DL,NN,IOT,AI,....
+	
+13. Python Features:
+	-> Simple and Easy to Learn
+	-> Freeware and Open Source
+	-> High Level Programming Language
+	-> Platform Independent
+	-> Portability
+	-> Dynamically Typed
+	-> Both Procedure Oriented and Object Oriented
+	-> Interpreted
+	-> Extensible
+	-> Embedded
+	-> Extensive Library
+	  etc.
+	  
+14. Limitations of Python
+	-> Mobile Applications
+	-> Enterprise Applications (Banking, Telecom, etc.)
+	-> Performance is Low (Solved using => JIT Compiler + PVM, also known as PYPY i.e. Python for speed)
+	
+15. Flavors of Python
+	-> CPython (C-language Applications)
+	-> JPython/Jython (Java Applications, JVM can understand this code)
+	-> Iron Python (C# .Net Applications)
+	-> Ruby Python (Ruby Python)
+	-> Anaconda Python (To work with large volume of data)
+	-> Stackless (Python for Concurrency)
+	-> PyPy (Python for Speed)
+	etc....
+	
+16. Python Versions:
+	-> 0.9.0 => February 20th, 1991
+	-> 1.0 => January 1994
+	-> 2.0 => October 16th, 2000 (PY2K)
+	-> 3.0 => December 3, 2008 (PY3K)
+	
+17. Python 3.x is not an extension of Python 2.x . It is developed as a complete new language,
+	Python 2.x donot support backward compatibility.
+	
+18. Identifiers : A name in Python program is called identifiers.
+	Allowed characters are -> a-z A-Z 0-9 _ 
+	Identifiers should not start with number
+	Identifiers are case sensitive 'total' and 'Total' is different(Python language itself is case sensitive).
+	There is no length limit of identifiers.
+	Reserved words are not allowed to be used as identifiers.
+	
+19. x -> normal variable
+	_x -> protected variable
+	__x -> private variable
+	__x__ -> magic variable
+	
+20. Reserved Words in Python (Words which are reserved to represent some meaning or funcionality)
+	-> There are 33 Reserved words in python.
+	
+	True, False, None
+	and, or, not, is
+	if, elif, else
+	while, for, break, continue, return, in yield
+	try, except, finally, raise, assert
+	import, from, as, class, def, pass
+	global, nonlocal, lambda, del, with
+	
+	-> contains only alphabets symbol.
+	-> except True, False and None all are lower case symbol.
+	-> swich statement and do-while is not present in python.
+	-> int, float, char ... are not present in python.
+	
+21. Data Types:
+	-> In Python unlike other programming languages we are not required to declare the type explicitly.
+	-> The type will be consider explicitly by the PVM automatically. Hence, Python is dynamically typed programming language.
+	-> In python type concept is available , but we are not required to declare explicitly.
+	-> Some In-Built Data Types in python are :
+		-> int, float, complex, bool, str
+		-> list, tuple, set, frozenset, dict
+		-> bytes, bytearray, range, None
+		
+	** Everything in Python is Object.
+	
+	a=10;
+	type(a) -> to know the type of a.
+	id(a) -> to know the address of a.
+	print(a) -> to print the value of a.
+	
+22. int Data Type:
+	-> It is used to represent integral data type.
+	-> Python 2 contains long data type to represent long integral value which is not present in python 3.
+	
+	Representing Integral Data Type:
+	-> We can represent integral value in 4 ways i.e. decimal, binary, octal and hexadecimal.
+	
+	a. Decimal Format:
+		-> Base 10
+		-> 0 - 9 are the available digits to be used.
+		-> no prefix is required.
+		-> example : a=95412
+	b. Binary Format:
+		-> Base 2
+		-> 0 and 1 are the available digits to be used.
+		-> Number should be prefixed with 0b or 0B.
+		-> example : a = 0b1111 or a = 0B1111
+	
+	c. Octal Format:
+		-> Base 8
+		-> 0 - 7 are the available digits to be used.
+		-> Number should be prefixed with 0o or 0O.
+		-> example : a = 0o7542 or a = 0O7542  
+		
+	d. HexaDecimal Format:
+		-> Base 16
+		-> 0 - 9, a - f, A - F  are the available digits to be used.
+		-> Number should be prefixed with 0x or 0X.
+		-> example : a = 0x8A52b or a = 0X8a52B
+	
+	-> We can provide value in any format but while printing PVM will by default use only decimal format to print the values.
+	-> If we want to print in any other format we have to use base conversion functions.
+	
+23. Base Conversion Functions:
+	-> We have three function to convert one integral format to other integral format.
+
+	a. bin(): This function is used to convert any integral format to the corresponding Binary format.
+		
+		>>> bin(15)
+				'0b1111'
+		>>> bin(0x2145)
+				'0b10000101000101'
+		>>> bin(0xface)
+				'0b1111101011001110'
+		>>> bin(0o457)
+				'0b100101111'
+				
+	b. oct(): This function is used to convert any integral format to the corresponding Octal format.
+		
+		>>> oct(123456)
+			'0o361100'
+		>>> oct(0b10011101)
+			'0o235'
+		>>> oct(0xface)
+			'0o175316'
+		
+	c. hex(): This function is used to convert any integral format to the corresponding HexaDecimal format.
+		
+		>>> hex(123456)
+			'0x1e240'
+		>>> hex(0b11010011)
+			'0xd3'
+		>>> hex(0o2475)
+			'0x53d'
+			
+24. float Data Type:
+	-> It is used to represent floating point data type.
+	-> Only decimal form value is allowed in Python.
+	-> binary, octal and hexadecimal values are not allowed in python.
+	-> Exponential Form (Scientific Notation) is allowed to use.
+		f = 1.2e3 or 1.2E3
+		f will be 1200.0
+		
+		>>> f=120000000000000000000.0
+		>>> f
+			1.2e+20
+			
+25. complex Data Type:			
+	-> It is used to represent complex number similar to which are present in mathematics.
+	-> It is represented as a+bj. 'a' is real part and 'b' is imaginary part. 'j' is to be used and not 'i'.
+	-> .real and .imag can be used to get real and imaginary value respectively.
+	
+	>>> x=5+4j
+	>>> x.real
+		5.0
+	>>> x.imag
+		4.0
+		
+	-> output will always be in floating point format.
+	-> Real part can be represented in decimal, binary, octal or hexadecimal format.
+	-> But, Imaginary part is required to be represented in only decimal format.
+	-> It is rarely used data type in normal application and is mostly used in scientific application, mathematical application, electrical application, etc.	
+
+26. bool Data Type:
+	-> Only allowed values for bool types are 'True' and 'False'. It is not 'true' and 'false'.
+	-> Internally 'True' is represented as '1' and 'False' is represented as '0'.
+		-- True + True = 2
+		-- True - False = 1
+		
+27. str Data Type:
+	-> Any sequence of characters between ' " ''' or """ is considered as string.
+	-> There is not char data type present in python. Even single character within single quote is considered as str.
+	-> ''' or """ is used to define multi line string literal. Also it is used to represent ' or " in between the string without using escape character.  
+	-> If we want to use ' into string as a normal character than we should enclose the string within ".
+	-> If we want to use " into string as a normal character than we should enclose the string within '.
+	-> If we want to use ' and " both into string as a normal character than we should enclose the string within """ or '''.
+	
+28. Index of str Data Type:
+	-> Each character of str can be accessed by using an index (0-based index).
+	-> if 'l' is length of str than its index will be from 0 to l-1.
+	-> One additional thing in python is that it also have negative index which starts from end of the str.
+	-> positive index means forward direction starts with 0.
+	-> negative index means backward direction starts with -1.
+	
+		>>> name = 'swapnil'
+					0123456
+				  -(7654321)	  
+		>>> name[3]
+			'p'
+		>>> name[0]
+			's'
+		>>> name[-5]
+			'a'
+		>>> name[-1]
+			'l'
+			
+29. Slice Operator:
+	-> This operator is used to get substring of a string (str) which is present in python.
+	-> s[begin:end] this will return a substring from 'begin' index to 'end-1' index.
+	-> s[3:8] will return string present from 3rd index to 7th index.
+	
+		>>> s='abcdefghijkl'
+		>>> s[3:8]
+			'defgh'
+	
+	-> If we don't specify begin index then automatically begin value will be 0.
+	-> If we don't specify end index then automatically end value will be end to string.
+		
+		>>> name = 'swapnil'
+					0123456
+				  -(7654321)	  
+		>>> a[:5]
+			'swapn'
+		>>> a[2:]
+			'apnil'
+		>>> a[:]
+			'swapnil'	
+	
+	-> begin and end value can also be the negative index of string.
+	
+	>>> a[-3:1]
+		''
+	>>> a[-6:5]
+		'wapn'
+
+	-> If the begin and end value exceed index value it will never raise any exception within range all character will be seleced without raising any exception.
+	
+		>>> a[2:555]
+			'apnil'
+		>>> a[1:-2] (As we move forward from 1 we will get -2 as negative index and we will stop.)
+			'wapn'		
+		>>> a[5:1]  (As we move forward from 5 we will never get 1 as an index hence, we get an empty string.)
+			''
+			
+30. Slice Operator Applications:
+		
+		e.g.: 1
+		
+		>>> name = 'apple'
+		>>> output = name[0].upper()+name[1:]
+		>>> output
+			'Apple'
+		
+		e.g.: 2
+			
+		>>> output = name[0:len(name)-1]+name[-1].upper()
+		>>> output
+			'applE'	
+		
+		e.g.: 3
+				
+		>>> output = name[0].upper()+name[1:len(name)-1]+name[-1].upper()
+		>>> output
+			'ApplE'
+			
+31. '+' and '*' operator:
+	
+	-> '+' operator acts as concatenation operator in python.
+	-> Both arguments used along with '+' operator should be string only. Otherwise we will get type error.
+	-> 'swap' + 'nil' => 'swapnil'
+	-> 'swap' + 10 => Type Error both argument should be string. 
+	-> '*' operator acts as string repetition operator in python.
+	-> 'swap' * 3 => 'swapswapswap'
+	-> 3 * 'swap' => 'swapswapswap' (allowed)
+	-> 'swap' * 'nil' => Type Error one argument should be string and other should be int.
+	
+32. Type Casting / Type Coersion:
+	
+	-> Casting / Coercion is the implicit conversion of an instance of one type to another during an operation which involves two arguments of the same type.
+	-> For Type Casting / Type Coersion we have five functions available i.e. int(), float(), complex(), bool(), str().
+	
+	a. int():
+	
+		To convert from other types to int type.
+	
+		i. float -> int:
+		
+			>>> int(10.2587)
+				10
+			Digits after the decimal points will be removed.
+		
+		ii. complex -> int: 
+			complex number cannot be converted to int type. If we try to do we will get type error.
+			
+		iii. bool -> int:
+		
+			>>> int(True)
+				1
+			>>> int(False)
+				0
+				
+			As True and False are stored as '1' and '0' resp. internally.
+			
+		iv. str - > int: 
+			For str to be converted to int, str should contain integral value and to be present in base 10 only. 
+			
+			>>> int('12')
+				12
+			
+			if we provide anything inside int other than integral value in base 10 format we will get value error.
+			eg. int('10.5') or int('0b1111') will result in value error.
+			
+	b. float():
+	
+		To convert from other types to float type.
+		
+		i. int -> float:
+			We can convert any int value in any base value to float value.
+			
+				>>> float(13)
+					13.0
+				>>> float(0b1111)
+					15.0
+				>>> float(0xface)
+					64206.0
+				>>> float(0o752)
+					490.0
+		
+		ii. complex -> float:
+			complex number cannot be converted to float type. If we try to do we will get type error.
+		
+		iii. bool -> float:
+		
+			>>> float(True)
+				1.0
+			>>> float(False)
+				0.0
+		
+		iv. str -> float:
+		
+			For str to be converted to float, str should contain integral value and to be present in base 10 only or floating value. 
+			
+			>>> float('12')
+				12.0
+			
+			>>> float('12.32')
+				12.32
+			
+			if we provide anything inside int other than integral value in base 10 format or floating value we will get value error.
+			eg. float('0b1111') will result in value error.
+		
+	c. complex():
+	
+		To convert from other types to complex type.
+		
+		Form i: complex(x) => x will be real value and imaginary value will be 0.
+		
+		Here, x can be any value such as integral in any base, floating point value, boolean value and also str value.
+		
+			>>> complex(0)
+				0j
+			>>> complex(12)
+				(12+0j)
+			>>> complex(0b1111)
+				(15+0j)
+			>>> complex(0o752)
+				(490+0j)
+			>>> complex(0xface)
+				(64206+0j)
+			>>> complex(12.5)
+				(12.5+0j)
+			>>> complex(False)
+				0j
+			>>> complex('15')
+				(15+0j)
+			>>> complex('15.25')
+				(15.25+0j)
+				
+			Note: The str value can only be in base 10 format and not in any other format.
+			
+		Form ii: complex(x,y) => x will be real value and y will be imaginary value.
+		
+			Here, x and y can be any value such as integral in any base, floating point value and boolean value.
+			If first argument 'x' is str then we can't pass second argument 'y' it will led to type error.
+			If first argument 'x' is not str then also we can't pass second argument 'y' as str it will led to type error.
+
+				>>> complex(10,12.5)
+					(10+12.5j)
+				>>> complex(True,0b1111)
+					(1+15j)
+			
+	d. bool():
+	
+		To convert from other types to bool type.
+		
+		i. int -> bool:
+			
+			bool(x) where x is integral value.
+			if x is 0 result is False otherwise True.
+			x can be represented in any base.
+			
+				>>> bool(11)
+					True
+				>>> bool(0)
+					False
+				>>> bool(0xab21)
+					True
+		
+		ii. float -> bool:
+			
+			bool(x) where x is floating value.
+			if x is 0 result is False otherwise True.
+			
+				>>> bool(0.00)
+					False
+				>>> bool(0.001)
+					True
+					
+		iii. complex -> bool:
+		
+			bool(x) where x is complex value.
+			It will result to 'False' if and only if real as well as imaginary part is 0 otherwise 'True'.
+			
+				>>> bool(0+0j)
+					False
+				>>> bool(0.01+0.0j)
+					True
+					
+		iv. str -> bool:
+		
+			bool(x) where x is a string value.
+			It will result in False if x is an empty string for any other thing it will return True.
+			
+				>>> bool('True')
+					True
+				>>> bool('False')
+					True
+				>>> bool('abcd')
+					True
+				>>> bool('')
+					False
+				
+	e. str():
+	
+		To convert from other types to str type.
+		
+		i. int -> str:
+		
+		We can convert any int value in any base value to str type.
+	
+			>>> str(123)
+				'123'
+			>>> str(0b1111)
+				'15'
+			>>> str(0xface)
+				'64206'
+		
+		ii. float -> str:
+		
+		Converts any floating point value provided into corresponding str type.
+		
+			>>> str(12.25)
+				'12.25'
+
+		iii. complex -> str:
+		
+		Converts the complex type provided to corresponding str type.
+		
+			>>> str(5j)
+				'5j'
+			>>> str(3+7j)
+				'(3+7j)'
+			>>> str(0+3j)
+				'3j'
+			>>> str(23+0j)
+				'(23+0j)'
+		
+		iv. bool -> str:
+		
+		Converts the bool value provided to corresponding str type.
+		
+			>>> str(True)
+				'True'
+			>>> str(False)
+				'False'
+			
+33. Fundamental Data Types v/s Immutability:
+
+	int, float, complex, bool and str are Fundamental Data Types.
+	Mutable -> Changeable
+	Immutable -> Non-Changeable
+	
+	Immutability -> Once we create an object we cannot perform any changes in that object. If we are trying to perform any changes with those changes a new object will be created.
+
+		>>> x = 10
+		>>> id(x)
+			2044590144
+		>>> x = x + 1
+		>>> id(x)
+			2044590160
+		>>> y = x
+		>>> id(y)
+			2044590160
+	
+	-> In python everything is an object.
+	-> Whenever we try to create a new object it first checks whether an object with similar content exists or not if it exists then it will refer to that existing object and no new object will be created.
+	-> Reusability is one important feature of python data types.
+	-> One advantage of it is that it improves memory utilization and performance of system, as object creation is a performance consuming task.
+	
+		>>> a = 'swapnil'
+		>>> b = 'swapnil'
+		>>> a is b
+			True
+		
+	-> Reusability is applicable in all data types of python except complex data type.
+
+		>>> a = 5+10j
+		>>> b = 5+10j
+		>>> a is b
+			False
+			
+34. Collection Related Data Types:
+
+	-> Fundamental Data Types can hold only single value.
+	-> To represent a group of values we should go for Collection Data Types.
+	-> They are list, tuple, set, frozenset, dict, range, bytes and bytearray.
+	
+35. list: 
+
+	-> Insertion Order is Preserved.
+	-> Duplicates are allowed.
+	-> Heterogeneous objects are allowed.
+	-> List is growable in nature.
+	-> It is represented by using '[]'.
+	-> List data type is mutable.
+	-> Elements can be accessed by using index.
+	-> Slicing operator can be used.
+	-> eg. l = [1,2,3,4]
+	
+		>>> a = [12, 12.5, 5+7j, 12, True, 'str']
+		>>> a
+			[12, 12.5, (5+7j), 12, True, 'str']
+		>>> type(a)
+			<class 'list'>
+		>>> a[3]
+			12
+		>>> a[2:6]
+			[(5+7j), 12, True, 'str']
+		>>> a[-2]
+			True
+		>>> a[-4]
+			(5+7j)
+		
+	-> Appending the given list.
+	
+		>>> a.append(32)
+		>>> a
+			[12, 12.5, (5+7j), 12, True, 'str', 32]
+	
+	-> removing an element
+	
+		>>> a.remove(12)
+		>>> a
+			[12.5, (5+7j), 12, True, 'str', 32]
+		Element found at first will be removed and not all elements.
+		
+	-> Mutability Nature of List:
+	
+		>>> l = [10,20,30,40]
+		>>> id(l)
+			54926728
+		>>> l[2] = 2020
+		>>> id(l)
+			54926728
+		>>> l
+			[10, 20, 2020, 40]
+
+36. tuple:
+	
+	-> tuple is exactly same as list data type. The only difference is that tuple is immutable.
+	-> It can be considered as read only version on list.
+	-> It is represented by using '()'.
+		
+		>>> a = (10,2.5,'True',55)
+		>>> type(a)
+			<class 'tuple'>
+		>>> a[3]
+			55
+		>>> a[1:4]
+			(2.5, 'True', 55)
+			
+	-> If we perform reassignment in tuple then we will get type error. => a[0] = 'swap' -- will result in type error.
+	-> If we perform any attribute function such as append or remove on tuple then we will get attribute error. => a.append('swap') or a.remove(10) -- will result in attribute error.
+	
+	**Important Point**
+	
+		>>> a=()
+		>>> type(a)
+			<class 'tuple'>
+		>>> t=(10)
+		>>> t
+			10
+		>>> type(t)
+			<class 'int'>
+		>>> t=(10,)
+		>>> type(t)
+			<class 'tuple'>
+			
+	-> Single value tuple should always end with a ','.
+
+37. Difference Between list and tuple:
+
+	-> list is mutable where as tuple is immutable.
+	-> list is stored inside '[]' where as tuple is stored inside '()'.
+	-> To store list more memory is required where as to store tuple less memory is required.
+	-> In list performance is low where as in tuple performace is high. 
+	-> If content is keep on changing then we should go for list where as If the content is fixed than we should go for tuple.
+	
+38. set: 
+	
+	-> Duplicates are not allowed.
+	-> Insertion order is not preserved.
+	-> It is represented inside '{}.
+	-> Heterogeneous objects are allowed.
+	-> indexing and slicing is not allowed.
+	-> Set is growable and mutable.
+	
+		>>> s={10,20,10,'swap',30,40}
+		>>> s
+			{40, 10, 20, 30, 'swap'}
+		>>> type(s)
+			<class 'set'>
+
+		Order is not preserved in set and hence we can't predict the output order. Also duplicates are eliminated.
+
+		s[0] s[1:3] => will result in type error	
+
+		>>> s.add(50)
+		>>> s
+			{40, 10, 50, 20, 30, 'swap'}
+		>>> s.remove(30)
+		>>> s
+			{40, 10, 50, 20, 'swap'}
+
+	-> append() vs add():
+		append will add an element at the end of the list.
+		add will just add the element to the set cause we don't know which is the last element.
+		
+	-> Bydefault {} will represent an empty dict and not an empty set. This is because dict is most commonly used data type than of set.
+	-> To create an empty set we should use set().
+	
+		>>> type(s)
+			<class 'set'>
+		>>> s
+			set()
+			
+	Difference between list and set:
+		List										Set
+		order										unorder
+		duplicates are allowed 						duplicates are not allowed
+		'[]'										'{}'
+		indexing and slicing are allowed  			indexing and slicing are not allowed
+		
+39. frozenset:
+	
+	-> frozenset is immutable type of set. Once created we can't perform any change to it.
+	
+		>>> s = {10,20,30,40}
+		>>> fs = frozenset(s)
+		>>> type(fs)
+			<class 'frozenset'>
+		
+	-> If we perform add or remove attribute on frozenset we will get attribute error.
+	
+		Tuple											FrozenSet
+		Insertion Order is preserved					Insertion Order is not preserved
+		Duplicates are allowed							Duplicates are not allowed
+		indexing, slicing is applicable					indexing, slicing is not applicable
+		
+40. dict:
+
+	-> It is used to represent a group of objects as key-value pair.
+	-> Representation: {k1:v1, k2:v2, k3:v3}
+	-> Duplicate keys are not allowed but values can be duplicated.
+	-> Heterogeneous objects are available for both keys and value.
+	-> It is mutable.
+	-> Indexing, Slicing is not applicable.
+	-> Objects will be stored according to hashcode of keys.
+	-> d={} => will create an empty dict. 
+	
+		>>> d = {1:'Swapnil',2:'Raj',3:'Harsh'}
+		>>> d
+			{1: 'Swapnil', 2: 'Raj', 3: 'Harsh'}
+		>>> type(d)
+			<class 'dict'>
+		>>> d[1]='Hritik'
+		>>> d
+			{1: 'Hritik', 2: 'Raj', 3: 'Harsh'}
+		
+	-> If we try to add duplicate key we won't get any exception, instead the old value will be replaced with the new value.
+		>>> d1 = {'a':'apple','a':'aeroplane'}
+		>>> d1
+			{'a': 'aeroplane'}
+		>>> d1['b']='ball'
+		>>> d1
+			{'a': 'aeroplane', 'b': 'ball'}
+		>>> d1['b']='bat'
+		>>> d1
+			{'a': 'aeroplane', 'b': 'bat'}
+
+41. range:  	
+
+	-> It is used to represent a sequence of number.
+	
+	Form i:
+		r = range(n) => r will contain number from 0 to n-1.
+		
+		
+		>>> r = range(10)
+		>>> type(r)
+			<class 'range'>
+		>>> r
+			range(0, 10)
+
+		>>> for x in r:
+				print(x)
+				
+			0
+			1
+			2
+			3
+			4
+			5
+			6
+			7
+			8
+			9
+
+		>>> r = range(-5)
+		>>> for x in r:
+				x
+
+								# nothing will be printed 
+		>>> r
+			range(0, -5)
+		
+		
+	Form ii:
+		r = range(begin,end) => r will contain number from begin to end-1.
+		
+		>>> r = range(100,110)
+		>>> r
+			range(100, 110)
+		>>> for x in r:
+				x
+
+			
+			100
+			101
+			102
+			103
+			104
+			105
+			106
+			107
+			108
+			109
+			
+			
+	-> For the above two forms default increment is '1'. 
+	-> Due to this it can only move in +ve direction only.
+	
+	Form iii:
+		r = range(begin,end,increment/decrement) => r will contain number from begin to end-1.
+		
+		>>> r = range(1,21,3)
+		>>> r
+			range(1, 21, 3)
+		>>> for x in r:
+				x
+
+			
+			1
+			4
+			7
+			10
+			13
+			16
+			19
+		>>> r = range(20,1,-3)
+		>>> for x in r:
+				x
+
+				
+			20
+			17
+			14
+			11
+			8
+			5
+			2
+		>>> r = range(1,21,-2)
+		>>> r
+		range(1, 21, -2)
+		>>> for x in r:
+				x
+
+						# nothing will be printed
+		>>> 
+		
+	-> Indexing and Slicing is applicable using range
+
+		>>> r = range(10,21)
+		>>> r[0]
+			10
+		>>> r[-1]
+			20
+		
+		>>> r[1:6]
+			range(11, 16)
+		
+		>>> r1 = r[1:6]
+		>>> for x in r1:
+			x
+
+			
+		11
+		12
+		13
+		14
+		
+		
+	-> range objects are immutable if we try to make any change we will get  type error.
+		e.g. r[2]=555  # this will result in type error.
+		
+42. bytes:
+
+	-> It is used to handle binary data such as present in images, audio, etc.
+	-> It contains value only in range of 0 to 255.
+	-> If we try to add any other thing other than integer 0-255 we will get value error.
+	-> bytes data type is immutable.
+	-> Indexing and Slicing is applicable.
+	
+		
+		>>> l=[10,20,30,40]
+		>>> b=bytes(l)
+		>>> type(b)
+			<class 'bytes'>
+		
+		>>> for x in b:
+			x
+
+			
+		10
+		20
+		30
+		40
+		
+		>>> b1 = b[1:4]
+		>>> for x in b1 :
+				x
+
+				
+			20
+			30
+			40
+		
+		
+		>>> b[1]=5
+			This will result in type error as reassignment is not allowed. (bytes are immutable) 
+		
+		>>> l=[100,200,300,400]
+		>>> b=bytes(l)
+			This will result in value error.
+
+				
+43. bytearray:
+	
+	-> bytearray is exactly similar to bytes, the only difference is that bytearray is mutable.
+
+		>>> l=[10,20,30,40]
+		>>> b = bytearray(l)
+		>>> type(b)
+			<class 'bytearray'>
+		>>> for x in b:
+				x
+
+			
+			10
+			20
+			30
+			40
+
+		>>> b[1]=50
+		>>> for x in b:
+			x
+
+				
+			10
+			50
+			30
+			40
+
+		>>> b[0]
+			10
+		>>> b[-1]
+			40
+			
+		>>> b1 = b[1:4]
+		>>> for x in b1 :
+				x
+
+			
+		50
+		30
+		40
+
+	***--------***
+	
+	list --> mutable
+	tuple --> immutable
+	set --> mutable
+	frozenset --> immutable
+	dict --> mutable
+	range --> immutable
+	bytes --> immutable
+	bytearray --> mutable
+	
+44. Data Types Summary:
+
+
+
+45. None Data Type:
+	
+	-> None means nothing. No value is associated with that reference.
+	-> To make an object eligible for GC we should go for None.
+	-> If a function won't return anything then None is stored.
+		
+		>>> def f1():
+				print('hello')
+
+			
+		>>> x = f1()
+		hello
+		>>> print(x)
+			None
+		
+	In python there are some situation where value is not available. To handle such type of situation we should go for None. 
+	
+	Strictly speaking None is also an object in python.
+	
+		>>> a = None
+		>>> id(a)
+			2032049384
+		>>> type(a)
+			<class 'NoneType'>
+
+	Throughout python only one None object is present. That object will be reuse again and again.
+
+		>>> a = None
+		>>> id(a)
+			2032049384
+		>>> b = None
+		>>> id(b)
+			2032049384
+		>>> def f1():
+				print('hello')
+		>>> x = f1()
+			hello
+		>>> id(x)
+			2032049384
+
+46. Escape Character:
+	
+	-> Certain characters which has some special meaning are called as escape character.
+	They are:
+	\n -> new line
+	\t -> horizontal tab
+	\r -> carriage return
+	\b -> backspace
+	\f -> form feed
+	\' -> for single quote
+	\" -> for double quote
+	\\ -> for back slash
+	
+	
+		>>> print("swapnil\tthakery")
+			swapnil	thakery
+		>>> print('swapnil\nthakery')
+			swapnil
+			thakery
+		>>> print ('This is \' symbol')
+			This is ' symbol
+		>>> print ("This is \" symbol")
+			This is " symbol
+		>>> print ("This is \\ symbol")
+			This is \ symbol
+
+47. Comments:
+	
+	-> '#' symbol is used for single line comment in python.
+	-> There is no multiline comment in python.
+
+48. Constants: 
+		
+		-> There is no constant conecpt is available in python.
+		-> But for convention purpose if we want to know which variable is constant we write that variable name in upper case.
+			e.g. MAX_LENGTH = 10
+		-> This doesnot means that MAX_LENGTH is constant but it is just a convention. The Value of MAX_LENGTH can be changed.
+	
