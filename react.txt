@@ -1,0 +1,20 @@
+What is React?
+
+--> React is a Client Side JavaScript Library.
+	Created and Maintained by Facebook.
+	Used to build dynamic user interfaces.
+	"Component" based.
+	Most popular framework in the industry.
+	
+Library or Framewrok?
+
+--> React is "technically" a library but is often referred to as a framework as it is used for many of the same reasons as framework.
+
+Why learn and use react?
+
+--> Build a Powerful Frontend U/I.
+	Code Organization.
+	Reusable Components.
+	Speed & Performance.
+	Make things much easier.
+	Very popular in the industry.
